@@ -12,15 +12,15 @@ public class Human {
 		return this.name;
 	}
 	
-	public void buyDog() {
+	public void buyDog(Dog dog) {
 		this.dog = dog;
 	}
 	
 	public String getInfo() {
 		if(this.dog != null) {
-			return this.name + " äger en hund som heter " + this.dog.getName();
+			return getName()+ " äger en hund som heter " + this.dog.getName();
 		} else {
-			return this.name + " äger inte en hund";
+			return getName() + " äger inte en hund";
 		}
 	}
 
