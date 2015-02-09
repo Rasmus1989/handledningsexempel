@@ -73,7 +73,7 @@ public class GUI extends JFrame {
 		dogField = new JTextField();
 		dogField.setBounds(108, 100, 114, 19);
 		contentPane.add(dogField);
-		dogField.setColumns(10);
+		dogField.setColumns(10); 
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(12, 192, 426, 96);
