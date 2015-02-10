@@ -15,8 +15,15 @@ public class Dog extends Mammal {
 
 	@Override
 	public String getInfo() {
-		// TODO Auto-generated method stub
-		return null;
+		String info = "";
+		if(isStupid) {
+			info = "the dog " + getFriendlyName() + ", lat: " + getLatinName() + " nurses for "
+				+ getGestationTime() + " months and is stupid";
+		} else {
+			info = "the dog " + getFriendlyName() + ", lat: " + getLatinName() + " nurses for "
+					+ getGestationTime() + " months and is not stupid";
+		}
+		return info;
 	}
 	
 	public boolean isStupid() {

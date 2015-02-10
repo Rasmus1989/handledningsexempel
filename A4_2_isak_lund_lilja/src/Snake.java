@@ -16,8 +16,13 @@ public class Snake extends Animal {
 
 	@Override
 	public String getInfo() {
-		// TODO Auto-generated method stub
-		return null;
+		String info = "";
+		if(!this.venomous) {
+			info = "the snake named " + getFriendlyName() + "lat: " + getLatinName() + " is not venomous";
+		} else {
+			info = "the snake named " + getFriendlyName() + "lat: " + getLatinName() + " is venomous";
+		}
+		return info;
 	}
 
 }

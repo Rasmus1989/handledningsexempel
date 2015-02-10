@@ -10,8 +10,9 @@ public class Cat extends Mammal {
 
 	@Override
 	public String getInfo() {
-		// TODO Auto-generated method stub
-		return null;
+		String info = "the cat " + getFriendlyName() + ", lat: " + getLatinName() + " nurses for "
+				+ getGestationTime() + " months and has " + getNumberOfLives() + " lives";
+		return info;
 	}
 
 	public int getNumberOfLives() {
