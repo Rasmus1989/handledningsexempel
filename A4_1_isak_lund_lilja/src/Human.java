@@ -3,6 +3,7 @@ public class Human {
 	
 	private Dog dog;
 	private String name;
+	private boolean hasDog = false;
 	
 	public Human(String name) {
 		this.name = name;
@@ -13,7 +14,12 @@ public class Human {
 	}
 	
 	public void buyDog(Dog dog) {
+		hasDog = !hasDog;
 		this.dog = dog;
+	}
+	
+	public boolean hasDog() {
+		return hasDog;
 	}
 	
 	public String getInfo() {
