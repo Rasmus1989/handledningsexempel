@@ -13,6 +13,8 @@ public class Human {
 		return this.name;
 	}
 	
+	// test
+	
 	public void buyDog(Dog dog) {
 		hasDog = !hasDog;
 		this.dog = dog;
