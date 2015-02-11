@@ -5,7 +5,7 @@ public abstract class Animal {
 	private String friendlyName = "no name";
 	
 	public Animal(String latinName) {
-		this.latinName = latinName;
+		this.setLatinName(latinName);
 	}
 	
 	public abstract String getInfo();
@@ -25,6 +25,8 @@ public abstract class Animal {
 	public void setLatinName(String latinName) {
 		this.latinName = latinName;
 	}
+
+
 	
 	
 	
